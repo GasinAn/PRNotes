@@ -1,0 +1,50 @@
+\chapter{概率}
+
+\begin{definition}
+    若$\Omega$的子集类$\mathcal{F}$满足\begin{itemize}
+        \item $\Omega\in\mathcal{F}$,
+        \item 若$A\in\mathcal{F}$, 则$A^\text{c}\in\mathcal{F}$,
+        \item 若$A_n\in\mathcal{F}$, $n\in \mathbb{N}_+$, 则$\bigcup_{n=1}^{\infty}A_n\in\mathcal{F}$,
+    \end{itemize}则称$\mathcal{F}$为$\Omega$的$\sigma$代数.
+\end{definition}
+
+\begin{definition}
+    $\bar{\mathbb{R} }:=[-\infty,+\infty]:=\mathbb{R}\cup\{-\infty,+\infty\}$, 其中\begin{equation*}
+        x+(\pm\infty)=(\pm\infty)+x=\pm\infty, \forall x\in\mathbb{R},
+    \end{equation*}\begin{equation*}
+        x\cdot(\pm\infty)=(\pm\infty)\cdot x=\begin{cases}
+            \pm\infty,\forall x>0,\\
+            \mp\infty,\forall x<0,\\
+        \end{cases}
+    \end{equation*}\begin{equation*}
+        (\pm\infty)+(\pm\infty)=\pm\infty,
+    \end{equation*}\begin{equation*}
+        (\pm\infty)\cdot(\pm\infty)=+\infty,
+    \end{equation*}\begin{equation*}
+        (\pm\infty)\cdot(\mp\infty)=-\infty,
+    \end{equation*}\begin{equation*}
+        0\cdot(\pm\infty)=(\pm\infty)\cdot0=0.
+    \end{equation*}$\bar{\mathbb{C} }$可类似定义.
+\end{definition}
+
+\begin{definition}
+    设$\mathcal{C}$ 是$\Omega$的一个子集类, $\mu:\mathcal{C}\to\bar{\mathbb{R} }_+:=[0,+\infty]$, 且至少存在一个集合$A\in\mathcal{C}$, 使$\mu(A)<+\infty$. 若$\forall A_n\in\mathcal{C}$, $n=1,2,3,\dots$两两不交且$\bigcup_{n=1}^{\infty}A_n\in\mathcal{C}$, 都有\begin{equation*}
+        \mu\left(\bigcup_{n=1}^{\infty}A_n\right)=\sum_{n=1}^{\infty}\mu\left(A_n\right),
+    \end{equation*}则称$\mu$为$\mathcal{C}$上的($\sigma$可加)测度. 若$\forall A\in\mathcal{C}$, $\mu(A)\in\mathbb{R}_+$, 则称$\mu$为有限的. 若$\forall A\in\mathcal{C}$, $\exists\{A_n:n\in\mathbb{N}_+\}\subset\mathcal{C} $, 使$\bigcup_{n=1}^{\infty}A_n=A$, 且$\forall n\in\mathbb{N}_+$, $\mu(A_n)\in\mathbb{R}_+$, 则称$\mu$为$\sigma$有限的. 
+\end{definition}
+
+\begin{definition}
+    若$\mathcal{F}$为$\Omega$的一个$\sigma$代数, 则称$A\in\mathcal{F}$为($\Omega$中关于$\mathcal{F}$的)可测集, $(\Omega,\mathcal{F})$为可测空间. 若$\mu$为$\mathcal{F}$上的测度, 则称$(\Omega,\mathcal{F},\mu)$为测度空间. 若$\mu=\mathbf{P}$, $\mathbf{P}(\Omega)=1$, 则称$(\Omega,\mathcal{F},\mathbf{P})$为概率空间, $\mathbf{P}$为$\mathcal{F}$上的概率.
+\end{definition}
+
+\begin{definition}
+    设$\mathcal{C}$ 是$\Omega$的一个子集类, 则包含$\mathcal{C}$的一切$\sigma$代数的交$\sigma(\mathcal{C})$包含$\mathcal{C}$且被任意包含$\mathcal{C}$的$\sigma$代数包含, 称$\sigma(\mathcal{C})$为由$\mathcal{C}$生成的$\sigma$代数.
+\end{definition}
+
+\begin{definition}
+    设$\Omega=\mathbb{R}^n$, $\mathscr{S}:=\{(a,b]\cap\mathbb{R}^n,a\in\bar{\mathbb{R}}^n,b\in\bar{\mathbb{R}}^n\}$, $\mathscr{T}$为$\mathbb{R}^n$的通常拓扑, 则称$\mathscr{B}^n:=\sigma(\mathscr{S})=\sigma(\mathscr{T})$为$n$维Borel代数. 复Borel代数可类似定义.
+\end{definition}
+
+\begin{definition}
+    存在测度空间$(\mathbb{R}^n,\mathscr{A}_{\lambda^*},\lambda^*)$, 称$\mathscr{A}_{\lambda^*}\!\!\supset\!\!\mathscr{B}^n$中的元素为$n$维Lebesgue可测集, $\lambda^*$为$n$维Lebesgue测度.
+\end{definition}

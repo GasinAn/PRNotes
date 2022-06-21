@@ -1,0 +1,30 @@
+% 编译方式: xelatex*2
+\documentclass{ctexbook}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{syntonly}
+%\syntaxonly
+\pagestyle{plain}
+\hypersetup{
+    colorlinks,
+    linkcolor=blue,
+    filecolor=pink,
+    urlcolor=cyan,
+    citecolor=red,
+}
+\def\b{\boldsymbol}
+\def\d{\mathrm{d}}
+\theoremstyle{definition}
+\newtheorem{definition}{定义}[chapter]
+\title{概率论笔记}
+\author{GasinAn}
+\begin{document}
+    \maketitle
+    \include{copyright.tex}
+    \tableofcontents
+    \include{概率.tex}
+\end{document}
