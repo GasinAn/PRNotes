@@ -1,9 +1,13 @@
 \chapter{随机变量}
 
 \begin{definition}
-    若$(\Omega,\mathcal{F},\mu)$为测度空间, 函数$X:\Omega\to\bar{\mathbb{R} }^n$满足$\forall B \in \bar{\mathscr{B}}^n$, $X^{-1}(B)\in\mathcal{F}$ (可测集的原像是可测集), 则称$X$为$n$维(广义)可测函数. 若$X(\Omega)\subset \mathbb{R}$, 则称$X$为$n$维有限实值可测函数. 若$\mu=\mathbf{P}$为概率, 则称$X$为$n$维广义随机变量. 若$\mu=\mathbf{P}$为概率且$X(\Omega)\subset \mathbb{R}$, 则称$X$为$n$维(有限实值)随机变量. 复值随机变量可类似定义.
+    若$(\Omega,\mathcal{F},\mu)$为测度空间, 函数$X:\Omega\to\bar{\mathbb{R} }^n$满足$\forall B \in \bar{\mathscr{B}}^n$, $X^{-1}(B)\in\mathcal{F}$ (可测集的原像是可测集), 则称$X$为$n$维(广义)可测函数. 若$X(\Omega)\subset \mathbb{R}$, 则称$X$为$n$维有限实值可测函数(分量为$1$维有限实值可测函数). 若$\mu=\mathbf{P}$为概率, 则称$X$为$n$维广义随机变量. 若$\mu=\mathbf{P}$为概率且$X(\Omega)\subset \mathbb{R}$, 则称$X$为$n$维(有限实值)随机变量(分量为$1$维有限实值随机变量). 复值随机变量可类似定义.
 \end{definition}
 
 \begin{definition}
     若$(\Omega,\mathcal{F},\mu)$为测度空间, $X$为$n$维有限实值可测函数, $\mu_X:{\mathscr{B}}^n\to \bar{\mathbb{R}}_+,B\mapsto\mu_X(B):=\mu(X^{-1}(B))$, 则$(\mathbb{R}^n,{\mathscr{B}}^n,\mu_X)$为测度空间, 称为$X$的测度空间, $\mu_X$称为$X$的测度. 若$\mu=\mathbf{P}$为概率, 则$(\mathbb{R}^n,{\mathscr{B}}^n,\mathbf{P}_X)$为概率空间, 称为$X$的概率空间, $\mathbf{P}_X$称为$X$的概率.
+\end{definition}
+
+\begin{definition}
+    若$n$维有限实值可测函数$X$和$Y$的测度$\mu_X$和$\mu_Y$相同, 则称$X$和$Y$为同分布的(若$(\mathbb{R}^n,{\mathscr{B}}^n,\mu_X)$为测度空间, $I:\mathbb{R}^n\to{\mathbb{R} }^n$为恒等映射, 则$X$与$I$同分布).
 \end{definition}
