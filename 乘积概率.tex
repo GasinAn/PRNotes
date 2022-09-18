@@ -1,0 +1,53 @@
+\chapter{乘积概率}
+
+\def\F{\mathcal{F}}
+\def\s{$(\Omega,\F,\mu)$}
+\def\R{\mathbb{R}}
+\def\P{\mathbf{P}}
+\begin{definition}
+    设$(\Omega_k,\F_k)$, $k=1,\dots,n$为$n$个可测空间, 则
+    \begin{equation}
+        \F_1\times\dots\times\F_n=\sigma(\left\{A_1\times\dots\times A_n:A_k\in\F_k,k=1,\dots,n\right\})
+    \end{equation}
+    为$\F_k$, $k=1,\dots,n$的乘积$\sigma$代数.
+\end{definition}
+
+\begin{definition}
+    设$(\Omega_k,\F_k,\mu_k)$, $k=1,\dots,n$为$n$个$\sigma$有限测度空间, 则在$\prod_{k=1}^{n}\F_k$上存在唯一$\sigma$有限测度$\mu$, 使得
+    \begin{equation}
+        \mu(\prod_{k=1}^{n}A_k)=\prod_{k=1}^{n}\mu_k(A_k),\,k=1,\dots,n,
+    \end{equation}
+    称$\mu$为$\mu_k$, $k=1,\dots,n$的乘积测度. 若$\mu_k=\P_k$为概率, $\mu=\P$, 则称$\P$为$\P_k$, $k=1,\dots,n$的乘积概率.
+\end{definition}
+
+\begin{definition}
+    设$(\Omega_k,\F_k)$, $k=1,2$为可测空间, 映射$\lambda:\Omega_1\times\F_2\to[0,\infty]$如果满足
+    \begin{itemize}
+        \item $\exists\, A_2\in\F_2, \lambda(\cdot,A_2)$为$\F_1$上的可测函数,
+        \item $\exists\, \omega_1\in\F_1, \lambda(\omega_1,\cdot)$为$\F_2$上的测度,
+    \end{itemize}
+    则称$\lambda$为$(\Omega_1,\F_1)$到$(\Omega_2,\F_2)$上的转移测度. 若$\exists\, A_{kn}\in\F_k$, $n\in\mathbb{N}$两两不交, $\Omega_k=\cup_{n=1}^{\infty}A_{kn}$, $k=1,2$, 使得$\sup_{\omega_1\in A_{1m}}\lambda(\omega_1,A_{2n})<\infty$, $\forall\, m,n\in\mathbb{N}$, 则称$\lambda$为$\sigma$有限的. 若$\lambda=\P$, $\forall\, \omega_1\in\Omega_1$, $\P(\omega_1,\cdot)$为概率, 则称$\P$为$(\Omega_1,\F_1)$到$(\Omega_2,\F_2)$上的转移概率.
+\end{definition}
+
+\begin{definition}
+    设$I$为任意指标集, $\{A_i:i\in I\}$为一集类, 则$\{A_i:i\in I\}$的乘积集为
+    \begin{equation}
+        \prod_{i\in I}A_i=\left\{\left\{a_{i}:i\in I\right\}:a_{i}\in A_i,i\in I\right\}.
+    \end{equation}
+\end{definition}
+
+\begin{definition}
+    设$I$为任意指标集, $\{(\Omega_i,\F_i,\P_i):i\in I\}$为一概率空间类, 则$\{\F_i:i\in I\}$的乘积$\sigma$代数为
+    \begin{equation}
+        \prod_{i\in I}\F_i=\sigma(\{A_{I_N}\times\Omega_{{I_N}^\text{c}}:I_N\subset I\text{为有限集}, A_{I_N}\in\prod_{i\in I_N}\F_i,\Omega_{{I_N}^\text{c}}=\prod_{i\in {I_N}^\text{c}}\Omega_i\}).
+    \end{equation}
+    称$(\prod_{i\in I}\Omega_i,\prod_{i\in I}\F_i)$为$\{(\Omega_i,\F_i):i\in I\}$的乘积可测空间.
+\end{definition}
+
+\begin{definition}
+    设$I$为任意指标集, $\{(\Omega_i,\F_i,\P_i):i\in I\}$为一概率空间类, 则在$(\prod_{i\in I}\Omega_i,\prod_{i\in I}\F_i)$上存在唯一概率$\P$, 使得$\forall I_N\in I$为有限集, $\forall A_i\in\F_i$, $i\in I_N$, 有
+    \begin{equation}
+        \P(\prod_{i\in I_N}A_i\times\prod_{i\in {I_N}^\text{c}}\Omega_i)=\prod_{i\in I_N}\P_i(A_i),
+    \end{equation}
+    称$\P$为$\{\P_i:i\in I\}$的乘积概率.
+\end{definition}
