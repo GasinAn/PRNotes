@@ -1,0 +1,33 @@
+\chapter{条件期望}
+
+\def\F{\mathcal{F}}
+\begin{definition}
+    设$\F$ 是$\Omega$的一个$\sigma$代数, $\varphi:\F\to\bar{\mathbb{R} }$, 若$\varphi(\varnothing )=0$, 且$\forall A_n\in\F$, $n=1,2,3,\dots$两两不交, $\bigcup_{n=1}^{\infty}A_n\in\F$, 都有\begin{equation*}
+        \varphi\left(\bigcup_{n=1}^{\infty}A_n\right)=\sum_{n=1}^{\infty}\varphi\left(A_n\right),
+    \end{equation*}则称$\varphi$为$\F$上的符号测度. 若$\forall A\in\F$, $\varphi(A)\in\mathbb{R}$, 则称$\varphi$为有限的.
+\end{definition}
+
+\def\s{$(\Omega,\F,\mu)$}
+\def\R{\mathbb{R}}
+\begin{definition}
+    若\s{}为测度空间, $\varphi$为$\F$上的符号测度, 若$\forall$ $\mu$零集$A$, $\varphi(A)=0$, 则称$\varphi$为$\mu$连续的.
+\end{definition}
+
+\begin{definition}
+    若\s{}为测度空间, $\mu$为$\sigma$有限的, $\varphi$为$\F$上的$\mu$连续的符号测度, 则$\varphi$为一可测函数$f$的不定积分$\int f\,\d\mu$, 且$f$由$\varphi$唯一决定, a.e.. 称$f$为$\varphi$对$\mu$的Radon导数, 记作$\frac{\d \varphi}{\d\mu}$.
+\end{definition}
+
+\def\P{\mathbf{P}}
+\def\E{\mathbf{E}}
+\def\C{\mathcal{C}}
+\begin{definition}
+    若$(\Omega,\F,\P)$为概率空间, 随机变量$X$的期望存在, $\C\subset\F$为$\sigma$代数(即$\C$为$\F$的子$\sigma$代数), $\C$上的集函数$p_\C$满足$\forall\,C\in\C$, $p_\C(C)=\P(C)$ (即$p_\C$为$\P$在$\C$上的限制), 则$(\cup_{C\in\C}C,\C,p_\C)$为测度空间且$p_\C$为$\sigma$有限的, 集函数$\varphi:\C\to\bar{\R},C\mapsto\E_\P[X;C]$为$\C$上的$\mu$连续的符号测度, 则称$\varphi$对$p_\C$的Radon导数为$X$在$\C$下关于$\P$的条件期望, 记作$\E_\P[X|\C]$ (则$\forall\,C\in\C$, ``$\int_C\E_\P[X|\C]\,\d\P=\E_\P[X;C]$''). $\forall A\in\F$, 称$\E_\P[I_A|\C]$为$A$在$\C$下的条件概率, 记作$\P(A|\C)$ (则$\forall\,C\in\C$, ``$\int_C\P(A|\C)\,\d\P=\P(A\cap C)$'').
+\end{definition}
+
+\begin{definition}
+    若$(\Omega,\mathcal{F},\mu)$为测度空间, $X$为$n$维可测函数, 则$\sigma(X):=\{X^{-1}(B):B\,\text{为}\,n\,\text{维复Borel集}\}$为$\sigma$代数, 称为由$X$产生的$\sigma$代数.
+\end{definition}
+
+\begin{definition}
+    若$(\Omega,\F,\P)$为概率空间, $X$, $Y$为随机变量, 则$\E_\P[X|\sigma(Y)]$称为$X$在$Y$下关于$\P$的条件期望, 记作$\E_\P[X|Y]$. $\forall A\in\F$, 称$\E_\P[I_A|Y]$为$A$在$Y$下的条件概率, 记作$\P(A|Y)$.
+\end{definition}
