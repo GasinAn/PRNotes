@@ -13,7 +13,7 @@
 \begin{definition}
     若\s{}为测度空间, $f$为非负可测函数, 则$f$在$\Omega$上对$\mu$的积分为
         \begin{equation}
-            \int_{\Omega}f\,\d\mu=\sup\left\{\int_{\Omega}g\,\d\mu\colong\text{为非负简单函数}\right\}.
+            \int_{\Omega}f\,\d\mu=\sup\left\{\int_{\Omega}g\,\d\mu\colon g\text{为非负简单函数}\right\}.
         \end{equation}
 \end{definition}
 
@@ -55,7 +55,7 @@
 \end{definition}
 
 \begin{definition}
-    若\s{}为测度空间, 有一与$\omega\in\Omega$有关的性质$\mathscr{P}=\left\{\mathscr{P}(\omega)\colon\omega\in\Omega\right\}$, $\left\{\omega\in\Omega\colon\mathscr{P}(\omega)\text{不成立}\right\}$为$\mu$零集, 则称$\mathscr{P}$几乎处处成立, 简记作$\mathscr{P}$, a.e.. 若$\mu=\mathbf{P}$为概率, 则$\mathscr{P}$几乎处处成立又称$\mathscr{P}$几乎必然成立, 简记作$\mathscr{P}$, a.s..
+    若\s{}为测度空间, 有一与$\omega\in\Omega$有关的性质$\mathscr{P}=\left\{\mathscr{P}(\omega)\colon \omega\in\Omega\right\}$, $\left\{\omega\in\Omega\colon \mathscr{P}(\omega)\text{不成立}\right\}$为$\mu$零集, 则称$\mathscr{P}$几乎处处成立, 简记作$\mathscr{P}$, a.e.. 若$\mu=\mathbf{P}$为概率, 则$\mathscr{P}$几乎处处成立又称$\mathscr{P}$几乎必然成立, 简记作$\mathscr{P}$, a.s..
 \end{definition}
 
 \begin{definition}
@@ -66,11 +66,11 @@
 \end{definition}
 
 \begin{definition}
-    若$(\Omega,\F)$和$(\Omega',\F')$为测度空间, 函数$f\colon\Omega\to\Omega'$满足$\forall A' \in \F'$, $f^{-1}(A')\in\F$ (可测集的原像是可测集), 则称$f$为$(\Omega,\F)$到$(\Omega',\F')$的可测映射.
+    若$(\Omega,\F)$和$(\Omega',\F')$为测度空间, 函数$f\colon \Omega\to\Omega'$满足$\forall A' \in \F'$, $f^{-1}(A')\in\F$ (可测集的原像是可测集), 则称$f$为$(\Omega,\F)$到$(\Omega',\F')$的可测映射.
 \end{definition}
 
 \begin{definition}
-    若$(\Omega,\F)$和$(\Omega',\F')$为测度空间, $\mu$为$\F$上的测度, $f$为$(\Omega,\F)$到$(\Omega',\F')$的可测映射, $\mu_f\colon\F'\to \bar{\mathbb{R}}_+,A'\mapsto\mu_f(A'):=\mu(f^{-1}(A'))$, 则$\mu_f$为测度, 称为$\mu$在$(\Omega',\F')$上由$f$导出的测度.
+    若$(\Omega,\F)$和$(\Omega',\F')$为测度空间, $\mu$为$\F$上的测度, $f$为$(\Omega,\F)$到$(\Omega',\F')$的可测映射, $\mu_f\colon \F'\to \bar{\mathbb{R}}_+,A'\mapsto\mu_f(A'):=\mu(f^{-1}(A'))$, 则$\mu_f$为测度, 称为$\mu$在$(\Omega',\F')$上由$f$导出的测度.
 \end{definition}
 
 \begin{theorem}
@@ -78,11 +78,11 @@
     \begin{equation}
         \int_{f^{-1}(A')}(g\circ f)\,\d\mu=\int_{A'}g\,\d\mu_f,
     \end{equation}
-    上式的意义是\colon 若等式的一边存在, 则另一边存在, 且二者相等.
+    上式的意义是: 若等式的一边存在, 则另一边存在, 且二者相等.
 \end{theorem}
 
 \begin{definition}
-    若\s{}为测度空间, 对任意函数$f$, 若$f$的积分存在, 则$f$在$\F$上对$\mu$的不定积分为$\int f\,\d\mu\colon\F\to\bar{\mathbb{C}},A\mapsto\left[\int f\,\d\mu\right](A)$, 其中
+    若\s{}为测度空间, 对任意函数$f$, 若$f$的积分存在, 则$f$在$\F$上对$\mu$的不定积分为$\int f\,\d\mu\colon \F\to\bar{\mathbb{C}},A\mapsto\left[\int f\,\d\mu\right](A)$, 其中
     \begin{equation}
         \left[\int f\,\d\mu\right](A)=\int_A f\,\d\mu.
     \end{equation}
