@@ -1,16 +1,5 @@
 \chapter{期望}
 
-\begin{definition}
-    若集合$\Omega\ne\varnothing $, $A\subset\Omega$ , 则称函数
-    \begin{equation}
-        I_A(\omega)=\begin{cases}
-            1, \omega\in A,\\
-            0, \omega\notin A
-        \end{cases}
-    \end{equation}
-    为$A$的示性函数.
-\end{definition}
-
 \def\F{\mathcal{F}}
 \def\s{$(\Omega,\F,\mu)$}
 \def\R{\mathbb{R}}
@@ -44,14 +33,21 @@
 \end{definition}
 
 \begin{definition}
-    若\s{}为测度空间, $F\in\F$, $f$为复可测函数, 则$f$在$F$上对$\mu$的积分为
+    若\s{}为测度空间, $A\in\F$, $f$为复可测函数, 则$f$在$A$上对$\mu$的积分为
     \begin{equation}
-        \int_{F}f\,\d\mu=\int_{\Omega}fI_F\,\d\mu.
+        \int_{A}f\,\d\mu=\int_{\Omega}fI_A\,\d\mu.
     \end{equation}
 \end{definition}
 
 \begin{definition}
-    若$(\Omega,\F,\mathbf{P})$为概率空间, $F\in\F$, $f$为复可测函数, 则称$f$在$F$上对$\mathbf{P}$的积分为$f$在$F$上对$\mathbf{P}$的期望, 记作$\mathbf{E}_{\mathbf{P}}[f;F]$.
+    若$(\mathbb{R}^n,{\mathscr{B}}^n,\mu_F)$为测度空间, $\mu_F$为分布函数$F$诱导出的Lebesgue-Stieltjes测度, $f$为复可测函数, 则$f$对$F$的Lebesgue-Stieltjes积分为
+    \begin{equation}
+        \int f\,\d F=\int f\,\d \mu_F.
+    \end{equation}
+\end{definition}
+
+\begin{definition}
+    若$(\Omega,\F,\mathbf{P})$为概率空间, $A\in\F$, $f$为复可测函数, 则称$f$在$A$上对$\mathbf{P}$的积分为$f$在$A$上对$\mathbf{P}$的期望, 记作$\mathbf{E}_{\mathbf{P}}[f;A]$.
 \end{definition}
 
 \begin{definition}
